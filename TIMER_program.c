@@ -19,6 +19,8 @@ void  MTIMER_voidInit(u8 Mode , u8 n , u8 ModeOption,u8 Prescalar_shift)
 {   
 			
 	 u8 frequency ; // 400 Hz
+         //freq = 244 Hz at sys clk 16 MHz & prescalar 256 or sys clk 4 MHz & prescalar 64 in fast pwm
+	 // freq = 245 Hz at sys clk 8 MHz & prescalar 64 or sys clk 1 MHz & prescalar 8 in phase correct
      u8 Precalar ;
 	 switch (Prescalar_shift)
 	 {
